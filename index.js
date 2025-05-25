@@ -30,7 +30,7 @@ db.connect(err => {
 
 
 app.get('/', (req, res) => {
-  res.sendStatus(200).json({ message: 'Backend en funcionamiento' });
+  res.status(200).json({ message: 'Backend en funcionamiento' });
 });
 
 app.get('/products', (req, res) => {
